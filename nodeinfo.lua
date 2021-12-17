@@ -10,7 +10,7 @@ This file contains all the various information routines related to flight nodes.
 function EFM_NI_CheckReachable(myNode)
 	local myDebug 		= false;
 
-	EFM_Shared_DebugMessage("Checking if node "..myNode.." is reachable on continent "..myContinent, myDebug);
+	EFM_Shared_DebugMessage("Checking if node "..myNode.." is reachable", myDebug);
 	
 	if (EFM_ReachableNodes ~= nil) then
 		for myContinent in pairs(EFM_ReachableNodes) do
